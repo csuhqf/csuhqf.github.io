@@ -1,0 +1,58 @@
+.container {
+    padding: 4rem 0;
+    max-width: 800px;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+.postList {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.postTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--foreground);
+    transition: color 0.2s;
+}
+
+.postTitle:hover {
+    color: var(--primary);
+}
+
+.postDate {
+    color: var(--muted);
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.postExcerpt {
+    color: var(--foreground);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.readMore {
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.readMore:hover {
+    text-decoration: underline;
+}

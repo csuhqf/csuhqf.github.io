@@ -1,0 +1,67 @@
+.container {
+    padding: 4rem 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+.yearSection {
+    margin-bottom: 3rem;
+}
+
+.year {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+}
+
+.paperList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.paperTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.authors {
+    color: var(--muted);
+}
+
+.venue {
+    font-style: italic;
+    color: var(--primary);
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.link {
+    font-size: 0.875rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
