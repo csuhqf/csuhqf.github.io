@@ -1,7 +1,0 @@
-1:"$Sreact.fragment"
-2:I[22016,["/_next/static/chunks/3bfb11fe66443595.js"],""]
-3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-:HL["/_next/static/chunks/0a4ee75385a540b4.css","style"]
-0:{"buildId":"u2sOdMn3m6PPb-dHW9R_4","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"container page-module__jXZM3G__container","children":[["$","h1",null,{"className":"page-module__jXZM3G__title","children":"Blog"}],["$","div",null,{"className":"page-module__jXZM3G__postList","children":[["$","article","hello-world",{"className":"page-module__jXZM3G__post","children":[["$","span",null,{"className":"page-module__jXZM3G__postDate","children":"2025-11-20"}],["$","$L2",null,{"href":"/blog/hello-world","children":["$","h2",null,{"className":"page-module__jXZM3G__postTitle","children":"Hello World: Starting My Academic Blog"}]}],["$","p",null,{"className":"page-module__jXZM3G__postExcerpt","children":"Welcome to my new academic homepage and blog. Here I will share my research updates and thoughts."}],["$","$L2",null,{"href":"/blog/hello-world","className":"page-module__jXZM3G__readMore","children":"Read more →"}]]}]]}]]}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0a4ee75385a540b4.css","precedence":"next"}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
-5:null
