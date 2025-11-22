@@ -11,44 +11,31 @@ export default function Publications() {
             <h1 className={styles.title}>Publications</h1>
 
             <div className={styles.yearSection}>
-                <h2 className={styles.year}>2025</h2>
+                <h2 className={styles.year}>Journal Paper</h2>
                 <div className={styles.paperList}>
                     <div className={styles.paper}>
                         <h3 className={styles.paperTitle}>
-                            Deep Learning for Academic Website Generation
+                            A New InSAR-Based Framework for Assessing Tailings Dam Failure Risks with the Robust Separation of Consolidation Settlements.
                         </h3>
-                        <p className={styles.authors}>
-                            <strong>Your Name</strong>, Jane Doe, John Smith
-                        </p>
                         <p className={styles.venue}>
-                            Proceedings of the International Conference on Web Engineering (ICWE 2025)
+                            International Journal of Applied Earth Observation and Geoinformation. (Accepted, JCR Q1, TOP Journal)
                         </p>
-                        <div className={styles.links}>
-                            <Link href="#" className={styles.link}>PDF</Link>
-                            <Link href="#" className={styles.link}>Code</Link>
-                            <Link href="#" className={styles.link}>BibTeX</Link>
-                        </div>
                     </div>
                 </div>
             </div>
 
             <div className={styles.yearSection}>
-                <h2 className={styles.year}>2024</h2>
+                <h2 className={styles.year}>Patents</h2>
                 <div className={styles.paperList}>
                     <div className={styles.paper}>
                         <h3 className={styles.paperTitle}>
-                            Optimizing Static Site Generation for Research Portfolios
+                            A Multi-Reference Point Deformation Solution Method for Time-Series InSAR. (ZL 202510958435.5)
                         </h3>
-                        <p className={styles.authors}>
-                            John Smith, <strong>Your Name</strong>
-                        </p>
-                        <p className={styles.venue}>
-                            Journal of Open Source Software (JOSS)
-                        </p>
-                        <div className={styles.links}>
-                            <Link href="#" className={styles.link}>PDF</Link>
-                            <Link href="#" className={styles.link}>Project Page</Link>
-                        </div>
+                    </div>
+                    <div className={styles.paper}>
+                        <h3 className={styles.paperTitle}>
+                            A Risk Assessment Method, Device, Terminal Equipment, and Medium for Tailings Dam Failure. (ZL 202411114631.6)
+                        </h3>
                     </div>
                 </div>
             </div>

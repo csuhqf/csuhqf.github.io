@@ -27,29 +27,66 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <Image
-          src="/profile.png"
-          alt="Profile Picture"
-          width={150}
-          height={150}
-          className={styles.profileImage}
-          priority
-        />
 
-        <h1 className={styles.name}>Qifeng He</h1>
-        <p className={styles.role}>Ph.D. Candidate | Central South University</p>
+        {/* Hero Section */}
+        <section className={styles.heroSection}>
+          <Image
+            src="/head.jpg"
+            alt="Qifeng He"
+            width={160}
+            height={160}
+            className={styles.profileImage}
+            priority
+          />
+          <h1 className={styles.name}>Qifeng He</h1>
+          <p className={styles.role}>Ph.D. Candidate | Central South University</p>
+          <p className={styles.bio}>
+            Specializing in InSAR and remote sensing technologies.
+            Dedicated to monitoring ground deformation and geohazards to advance
+            safety and understanding of our changing environment.
+          </p>
+        </section>
 
+        {/* Research Interests */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Research Interests</h2>
+          <div className={styles.interestsList}>
+            <span className={styles.interestTag}>InSAR</span>
+            <span className={styles.interestTag}>Remote Sensing</span>
+            <span className={styles.interestTag}>Geohazards</span>
+            <span className={styles.interestTag}>Time-Series Analysis</span>
+            <span className={styles.interestTag}>Deformation Monitoring</span>
+          </div>
+        </section>
+
+        {/* Quick Navigation */}
+        <section className={styles.section}>
+          <div className={styles.ctaContainer}>
+            <Link href="/projects" className={`${styles.ctaButton} ${styles.primaryBtn}`}>
+              View Projects
+            </Link>
+            <Link href="/publications" className={`${styles.ctaButton} ${styles.secondaryBtn}`}>
+              Publications
+            </Link>
+            <Link href="/blog" className={`${styles.ctaButton} ${styles.secondaryBtn}`}>
+              Read Blog
+            </Link>
+          </div>
+        </section>
+
+        {/* Social Links */}
         <div className={styles.contactLinks}>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="GitHub">
-            <Github size={32} />
+          <a href="https://github.com/csuhqf" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="GitHub">
+            <Github size={28} />
           </a>
           <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="Google Scholar">
-            <GraduationCap size={32} />
+            <GraduationCap size={28} />
           </a>
-          <a href="https://bilibili.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="Bilibili">
-            <BilibiliIcon size={32} />
+          <a href="https://space.bilibili.com/3546393686713692" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="Bilibili">
+            <BilibiliIcon size={28} />
           </a>
         </div>
+
       </div>
     </div>
   );

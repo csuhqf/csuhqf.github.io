@@ -47,38 +47,35 @@ export default function About() {
             </section>
 
             <section className={styles.section}>
-                <h2 className={styles.sectionTitle}>Research Experience</h2>
-
+                <h2 className={styles.sectionTitle}>Honors & Awards</h2>
                 <div className={styles.item}>
-                    <div className={styles.itemHeader}>
-                        <h3 className={styles.itemTitle}>Remote Sensing Detection Technology for Underground Space Utilization in Complex Terrains</h3>
-                        <span className={styles.itemDate}>Oct 2023 - Present</span>
-                    </div>
-                    <div className={styles.itemSubtitle}>Core Researcher | National Key R&D Program of China (Sub-topic No. 2022YFB3903602)</div>
-                    <div className={styles.itemDescription}>
-                        <ul>
-                            <li><strong>Overview:</strong> A comprehensive project utilizing remote sensing to monitor surface deformation in border and mining areas.</li>
-                            <li><strong>Key Contributions:</strong>
-                                <ul>
-                                    <li>Integrated high-precision InSAR surface deformation data with multi-resolution optical remote sensing imagery and geographic information.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul className={styles.list}>
+                        <li><strong>Outstanding Graduate of Hunan Province</strong> | 2023</li>
+                        <li><strong>"Jingwei Pathfinder" First Class Scholarship</strong> (Corporate Scholarship) | 2021-2022
+                            <ul>
+                                <li>Awarded to top students in the School of Geosciences and Info-Physics.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Special Prize</strong>, 12th National University Student Surveying and Mapping Sci-Tech Paper Competition | 2021</li>
+                        <li><strong>First Prize</strong>, 6th National University Student Surveying and Mapping Skills Competition (Virtual Simulation Digital Mapping) | 2021</li>
+                        <li><strong>First / Second Class Academic Scholarship of Central South University</strong> | 2020 - 2024
+                            <ul>
+                                <li>Awarded consecutively for academic excellence (Top 10%).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Outstanding Student / Outstanding League Member of CSU</strong> | 2020 - 2023</li>
+                    </ul>
                 </div>
             </section>
 
             <section className={styles.section}>
                 <h2 className={styles.sectionTitle}>Skills</h2>
-                <div className={styles.skillsList}>
-                    <span className={styles.skill}>Python</span>
-                    <span className={styles.skill}>PyTorch</span>
-                    <span className={styles.skill}>JavaScript/TypeScript</span>
-                    <span className={styles.skill}>React/Next.js</span>
-                    <span className={styles.skill}>C++</span>
-                    <span className={styles.skill}>LaTeX</span>
-                    <span className={styles.skill}>InSAR</span>
-                    <span className={styles.skill}>Remote Sensing</span>
+                <div className={styles.item}>
+                    <ul className={styles.list}>
+                        <li><strong>Programming:</strong> Python, MATLAB.</li>
+                        <li><strong>Software & Tools:</strong> GAMMA/pygamma, GMT/pygmt, Surfer, ArcGIS Pro, AutoCAD, CloudCompare, Microsoft Office.</li>
+                        <li><strong>Languages:</strong> English (CET-6, CET-4), Mandarin (Native).</li>
+                    </ul>
                 </div>
             </section>
         </div>

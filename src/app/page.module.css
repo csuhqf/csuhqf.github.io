@@ -1,11 +1,12 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 4rem 2rem;
 }
 
 .fixedBackground {
@@ -13,52 +14,144 @@
 }
 
 .content {
+  max-width: 800px;
+  width: 100%;
   text-align: center;
   color: var(--foreground);
   z-index: 1;
-  padding: 2rem;
   animation: fadeIn 1s ease-out;
 }
 
+.heroSection {
+  margin-bottom: 3rem;
+}
+
 .profileImage {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--border);
-  margin-bottom: 2rem;
+  border: 4px solid var(--background);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
 
 .name {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
+  background: linear-gradient(45deg, var(--foreground) 30%, var(--muted));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .role {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.bio {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--foreground);
+  max-width: 600px;
+  margin: 0 auto;
   opacity: 0.9;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.interestsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.interestTag {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary);
+  color: var(--foreground);
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.interestTag:hover {
+  transform: translateY(-2px);
+  background-color: var(--border);
+}
+
+.ctaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.ctaButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.primaryBtn {
+  background-color: var(--foreground);
+  color: var(--background);
+  border: 2px solid var(--foreground);
+}
+
+.primaryBtn:hover {
+  background-color: transparent;
+  color: var(--foreground);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: var(--foreground);
+  border: 2px solid var(--border);
+}
+
+.secondaryBtn:hover {
+  border-color: var(--foreground);
 }
 
 .contactLinks {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
 }
 
 .iconLink {
-  color: var(--foreground);
-  transition: transform 0.2s, opacity 0.2s;
-  opacity: 0.8;
+  color: var(--muted);
+  transition: all 0.2s;
 }
 
 .iconLink:hover {
+  color: var(--foreground);
   transform: translateY(-3px);
-  opacity: 1;
 }
 
 @keyframes fadeIn {
@@ -78,7 +171,7 @@
     font-size: 2.5rem;
   }
 
-  .role {
-    font-size: 1.2rem;
+  .container {
+    padding: 6rem 1.5rem 2rem;
   }
 }
