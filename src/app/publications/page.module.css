@@ -1,5 +1,5 @@
 .container {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     /* Force rebuild to fix 503 error */
 }
 
