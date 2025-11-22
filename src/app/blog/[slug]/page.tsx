@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export async function generateStaticParams() {
     const paths = getAllPostSlugs();
     return paths.map((path) => ({
-        slug: path.params.slug,
+        slug: encodeURIComponent(path.params.slug),
     }));
 }
 
