@@ -13,7 +13,7 @@ export function getPhotos() {
         .filter((fileName) => /\.(jpg|jpeg|png|webp)$/i.test(fileName))
         .map((fileName) => {
             return {
-                src: `/photos/${fileName}`,
+                src: `/photos/${encodeURIComponent(fileName)}`,
                 alt: fileName.replace(/\.[^/.]+$/, "").replace(/-/g, " "),
             };
         });
