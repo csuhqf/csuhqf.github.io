@@ -26,14 +26,6 @@ const BilibiliIcon = ({ size = 32, className = "" }) => (
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Image
-        src="/background.png"
-        alt="Background"
-        fill
-        className={styles.backgroundImage}
-        priority
-      />
-
       <div className={styles.content}>
         <Image
           src="/profile.png"

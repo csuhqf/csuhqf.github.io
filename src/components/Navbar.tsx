@@ -1,18 +1,48 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Menu, X, BookOpen } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [isTop, setIsTop] = useState(true);
     const pathname = usePathname();
     const isHome = pathname === '/';
 
+    useEffect(() => {
+        let lastScrollY = window.scrollY;
+
+        const controlNavbar = () => {
+            const currentScrollY = window.scrollY;
+
+            // At the top (or very close), always show and be transparent
+            if (currentScrollY < 10) {
+                setIsVisible(true);
+                setIsTop(true);
+            } else {
+                setIsTop(false);
+                // Hide when scrolling down, show when scrolling up
+                if (currentScrollY > lastScrollY) {
+                    setIsVisible(false);
+                } else {
+                    setIsVisible(true);
+                }
+            }
+            lastScrollY = currentScrollY;
+        };
+
+        window.addEventListener('scroll', controlNavbar);
+        return () => window.removeEventListener('scroll', controlNavbar);
+    }, []);
+
     return (
-        <nav className={`${styles.navbar} ${isHome ? styles.transparent : ''}`}>
+        <nav
+            className={`${styles.navbar} ${isHome && isTop ? styles.transparent : styles.solid} ${!isVisible ? styles.hidden : ''}`}
+        >
             <div className={`container ${styles.container}`}>
                 <Link href="/" className={styles.logo}>
                     <BookOpen size={24} />
