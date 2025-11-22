@@ -17,11 +17,11 @@ export default function Blog() {
                 {allPostsData.map(({ slug, date, title, excerpt }) => (
                     <article key={slug} className={styles.post}>
                         <span className={styles.postDate}>{date}</span>
-                        <Link href={`/blog/${slug}`}>
+                        <Link href={`/blog/${encodeURIComponent(slug)}`}>
                             <h2 className={styles.postTitle}>{title}</h2>
                         </Link>
                         <p className={styles.postExcerpt}>{excerpt}</p>
-                        <Link href={`/blog/${slug}`} className={styles.readMore}>
+                        <Link href={`/blog/${encodeURIComponent(slug)}`} className={styles.readMore}>
                             Read more →
                         </Link>
                     </article>

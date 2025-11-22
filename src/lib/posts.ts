@@ -25,8 +25,8 @@ export function getSortedPostsData(): PostData[] {
     const allPostsData = fileNames
         .filter(fileName => fileName.endsWith('.md'))
         .map((fileName) => {
-            // Remove ".md" from file name to get id
-            const slug = encodeURIComponent(fileName.replace(/\.md$/, ''));
+            // Remove ".md" from file name to get slug (use original filename, not encoded)
+            const slug = fileName.replace(/\.md$/, '');
 
             // Read markdown file as string
             const fullPath = path.join(postsDirectory, fileName);
@@ -109,15 +109,15 @@ export function getAllPostSlugs() {
         .map((fileName) => {
             return {
                 params: {
-                    slug: encodeURIComponent(fileName.replace(/\.md$/, '')),
+                    slug: fileName.replace(/\.md$/, ''),
                 },
             };
         });
 }
 
 export async function getPostData(slug: string): Promise<PostData> {
-    const decodedSlug = decodeURIComponent(slug);
-    const fullPath = path.join(postsDirectory, `${decodedSlug}.md`);
+    // Slug is now the original filename (not encoded)
+    const fullPath = path.join(postsDirectory, `${slug}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     // Use gray-matter to parse the post metadata section

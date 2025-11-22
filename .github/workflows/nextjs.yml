@@ -31,6 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Configure Git for Unicode filenames
+        run: |
+          git config --global core.quotepath false
+          git config --global core.precomposeunicode true
       - name: Detect package manager
         id: detect-package-manager
         run: |
