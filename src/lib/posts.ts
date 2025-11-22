@@ -117,7 +117,15 @@ export function getAllPostSlugs() {
 
 export async function getPostData(slug: string): Promise<PostData> {
     // Slug is now the original filename (not encoded)
-    const fullPath = path.join(postsDirectory, `${slug}.md`);
+    let targetSlug = slug;
+    let fullPath = path.join(postsDirectory, `${targetSlug}.md`);
+
+    if (!fs.existsSync(fullPath)) {
+        // Try decoding the slug if the file doesn't exist
+        targetSlug = decodeURIComponent(slug);
+        fullPath = path.join(postsDirectory, `${targetSlug}.md`);
+    }
+
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     // Use gray-matter to parse the post metadata section
