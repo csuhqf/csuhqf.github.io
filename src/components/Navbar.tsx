@@ -46,7 +46,7 @@ export default function Navbar() {
             <div className={`container ${styles.container}`}>
                 <Link href="/" className={styles.logo}>
                     <BookOpen size={24} />
-                    <span>AcademicName</span>
+                    <span>Qifeng He</span>
                 </Link>
 
                 <div className={styles.desktopMenu}>
