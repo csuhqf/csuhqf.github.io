@@ -36,8 +36,8 @@ export default function Home() {
           priority
         />
 
-        <h1 className={styles.name}>何奇峰</h1>
-        <p className={styles.role}>PhD Student, School of Geosciences and Info-Physics, Central South University</p>
+        <h1 className={styles.name}>Qifeng He</h1>
+        <p className={styles.role}>Ph.D. Candidate | Central South University</p>
 
         <div className={styles.contactLinks}>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="GitHub">
