@@ -114,24 +114,17 @@
   transition: all 0.2s ease;
 }
 
-.primaryBtn {
+.primaryBtn,
+.secondaryBtn {
   background-color: var(--foreground);
   color: var(--background);
   border: 2px solid var(--foreground);
 }
 
-.primaryBtn:hover {
-  background-color: transparent;
-  color: var(--foreground);
-}
-
-.secondaryBtn {
-  background-color: transparent;
-  color: var(--foreground);
-  border: 2px solid var(--border);
-}
-
+.primaryBtn:hover,
 .secondaryBtn:hover {
+  background-color: var(--background);
+  color: var(--foreground);
   border-color: var(--foreground);
 }
 
