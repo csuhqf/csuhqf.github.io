@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Qifeng He's Academic Homepage
+
+Welcome to my personal academic homepage. This website is designed to showcase my research in InSAR and remote sensing, list my academic publications, and share technical insights through a blog. It also features a photography portfolio.
+
+## Features
+
+- **Home**: Personal introduction, research interests, and social connection links.
+- **Projects**: Detailed showcase of my research projects and contributions.
+- **Publications**: A comprehensive and up-to-date list of my academic publications.
+- **Blog**: A fully functional markdown-based blog system for sharing knowledge and updates.
+- **Photography**: A gallery section to display my photography work.
+- **Responsive Design**: Fully responsive layout optimized for both desktop and mobile devices.
+
+## Tech Stack
+
+This project is built with modern web technologies:
+
+- [Next.js 15](https://nextjs.org/) - The React Framework for the Web
+- [React](https://react.dev/) - Library for web and native user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
+- [CSS Modules](https://github.com/css-modules/css-modules) - Scoped CSS for modular styling
+- [Lucide React](https://lucide.dev/) - Beautiful & consistent icons
 
 ## Getting Started
 
@@ -18,19 +39,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+This site is configured for deployment on [GitHub Pages](https://pages.github.com/).
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
