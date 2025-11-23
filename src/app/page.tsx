@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, GraduationCap } from "lucide-react";
+import { Github, GraduationCap, Mail, BookOpen } from "lucide-react";
 import styles from "./page.module.css";
 
 // Custom Bilibili Icon (Simplified TV style)
@@ -76,13 +76,19 @@ export default function Home() {
 
         {/* Social Links */}
         <div className={styles.contactLinks}>
+          <a href="mailto:heqifeng@csu.edu.cn" className={styles.iconLink} aria-label="Email">
+            <Mail size={28} />
+          </a>
+          <a href="https://scholar.google.com/citations?user=1wLPNNUAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="Google Scholar">
+            <GraduationCap size={28} />
+          </a>
           <a href="https://github.com/csuhqf" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="GitHub">
             <Github size={28} />
           </a>
-          <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="Google Scholar">
-            <GraduationCap size={28} />
+          <a href="https://www.cnblogs.com/heqifeng" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="Blog">
+            <BookOpen size={28} />
           </a>
-          <a href="https://space.bilibili.com/3546393686713692" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="Bilibili">
+          <a href="https://space.bilibili.com/434466317" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="Bilibili">
             <BilibiliIcon size={28} />
           </a>
         </div>
