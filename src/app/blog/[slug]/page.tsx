@@ -5,13 +5,12 @@ import styles from "./page.module.css";
 export async function generateStaticParams() {
     const paths = getAllPostSlugs();
     return paths.map((path) => ({
-        slug: encodeURIComponent(path.params.slug),
+        slug: path.params.slug,
     }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug: encodedSlug } = await params;
-    const slug = decodeURIComponent(encodedSlug);
+    const { slug } = await params;
     const postData = await getPostData(slug);
     return {
         title: `${postData.title} - Academic Homepage`,
@@ -19,8 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug: encodedSlug } = await params;
-    const slug = decodeURIComponent(encodedSlug);
+    const { slug } = await params;
     const postData = await getPostData(slug);
 
     return (
