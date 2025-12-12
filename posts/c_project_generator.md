@@ -112,7 +112,7 @@ chmod +x creat_c_project.sh
 ./creat_c_project.sh InSAR_Test
 ```
 
-![image](./img4/terminal_run.jpg)
+![Terminal](./img4/one.jpg)
 
 **第四步**：效果验证。脚本运行后，目录结构如下所示，且 `compile_commands.json` 已自动链接到根目录。使用 `nvim src/main.cpp` 打开文件，***代码补全和跳转功能即刻生效，无需任何额外配置***。
 
@@ -125,7 +125,7 @@ InSAR_Test/
 └── src/
     └── main.cpp
 ```
-![image](./img4/nvim_lsp.jpg)
+![Neovim LSP](./img4/two.jpg)
 
 ## 尾注
 - 本文脚本适用于 Mac (M芯片/Intel) 及 Linux 环境。Windows 用户建议使用我编写的 Python 版本（自动处理路径分隔符和软链接权限）。
