@@ -1,10 +1,11 @@
+"use client";
+
+import { useState } from "react";
+import CertificateModal from "@/components/CertificateModal";
 import styles from "./page.module.css";
 
-export const metadata = {
-    title: "About - Academic Homepage",
-};
-
 export default function About() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <div className={`container ${styles.container}`}>
             <h1 className={styles.title}>About Me</h1>
@@ -50,6 +51,11 @@ export default function About() {
                 <h2 className={styles.sectionTitle}>Honors & Awards</h2>
                 <div className={styles.item}>
                     <ul className={styles.list}>
+                        <li>
+                            <span className={styles.clickableAward} onClick={() => setIsModalOpen(true)}>
+                                <strong>Oral Presentation (First Prize)</strong>, 2025 International Symposium on Smart City and Disaster Risk Reduction, Xuzhou, CHINA | Dec 2025
+                            </span>
+                        </li>
                         <li><strong>Outstanding Graduate of Hunan Province</strong> | 2023</li>
                         <li><strong>"Jingwei Pathfinder" First Class Scholarship</strong> (Corporate Scholarship) | 2021-2022
                             <ul>
@@ -78,6 +84,13 @@ export default function About() {
                     </ul>
                 </div>
             </section>
+
+            <CertificateModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                imageSrc="/certificate_2025_smart_city.jpg"
+                title="2025 International Symposium on Smart City and Disaster Risk Reduction - First Prize"
+            />
         </div>
     );
 }

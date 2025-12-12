@@ -42,6 +42,10 @@
     padding: 1rem;
     background: var(--background);
     border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
 }
 
 .captionText {
@@ -49,4 +53,6 @@
     font-weight: 500;
     color: var(--foreground);
     text-transform: capitalize;
+    text-align: center;
+    margin: 0;
 }

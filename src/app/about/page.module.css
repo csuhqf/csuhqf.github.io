@@ -86,3 +86,20 @@
     color: var(--muted);
     font-size: 0.95rem;
 }
+
+.clickableAward {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+    padding: 0.2rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.clickableAward:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.clickableAward:active {
+    transform: scale(0.98);
+}
