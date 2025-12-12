@@ -21,7 +21,8 @@ for img_dir in "$POSTS_DIR"/img*/; do
         echo "  📁 同步 $dir_name ..."
         
         # 使用 rsync 同步（保持更新，删除目标中多余的文件）
-        rsync -av --delete "$img_dir" "$PUBLIC_DIR/" > /dev/null 2>&1
+        # 注意：去掉源路径的 / 以保持目录结构
+        rsync -av --delete "${img_dir%/}" "$PUBLIC_DIR/" > /dev/null 2>&1
         
         ((synced_count++))
     fi
