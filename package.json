@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync-images": "bash sync-blog-images.sh"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

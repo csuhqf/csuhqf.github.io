@@ -150,11 +150,9 @@ export async function getPostData(slug: string): Promise<PostData> {
         date = stats.mtime.toISOString().split('T')[0];
     }
 
-    // Rewrite image paths
+    // Rewrite image paths - automatically handle img, img2, img3, img4, etc.
     let content = matterResult.content;
-    content = content.replace(/\.\/img\//g, '/images/blog/img/');
-    content = content.replace(/\.\/img2\//g, '/images/blog/img2/');
-    content = content.replace(/\.\/img3\//g, '/images/blog/img3/');
+    content = content.replace(/\.\/img(\d*)\//g, '/images/blog/img$1/');
 
     // Use remark to convert markdown into HTML string
     const processedContent = await remark()
