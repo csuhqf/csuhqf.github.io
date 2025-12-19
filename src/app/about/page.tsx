@@ -78,7 +78,7 @@ export default function About() {
                 <h2 className={styles.sectionTitle}>Skills</h2>
                 <div className={styles.item}>
                     <ul className={styles.list}>
-                        <li><strong>Programming:</strong> Python, MATLAB.</li>
+                        <li><strong>Programming:</strong> Python, Rust, MATLAB.</li>
                         <li><strong>Software & Tools:</strong> GAMMA/pygamma, GMT/pygmt, Surfer, ArcGIS Pro, AutoCAD, CloudCompare, Microsoft Office.</li>
                         <li><strong>Languages:</strong> English (CET-6, CET-4), Mandarin (Native).</li>
                     </ul>

@@ -67,6 +67,28 @@ export default function Projects() {
                     </ul>
                 </div>
             </div>
+
+            <div className={styles.item}>
+                <div className={styles.itemHeader}>
+                    <h3 className={styles.itemTitle}>rstiff - High-Precision GeoTiff Processing Library for Rust</h3>
+                    <span className={styles.itemDate}>Oct 2025 - Present</span>
+                </div>
+                <div className={styles.itemSubtitle}>Author & Maintainer | Open Source Project | <a href="https://github.com/csuhqf/rstiff" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://crates.io/crates/rstiff" target="_blank" rel="noopener noreferrer">crates.io</a></div>
+                <div className={styles.itemDescription}>
+                    <ul>
+                        <li><strong>Overview:</strong> Developed a comprehensive Rust library for GeoTiff file I/O and processing, addressing the lack of advanced GeoTiff capabilities in the Rust ecosystem beyond basic GDAL bindings.</li>
+                        <li><strong>Key Features:</strong>
+                            <ul>
+                                <li>Automatic data type detection and preservation during read/write operations, ensuring output compatibility.</li>
+                                <li>Intelligent NoData handling with proper transparency preservation and NaN support.</li>
+                                <li>Advanced processing capabilities including coordinate reprojection and vector-based raster cropping with optional masking.</li>
+                                <li>High-precision scientific computing using ndarray::Array3&lt;f64&gt; for data representation.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Impact:</strong> Provides the Rust geospatial community with a reliable alternative to limited existing solutions, enabling efficient GeoTiff processing workflows in Rust applications.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
