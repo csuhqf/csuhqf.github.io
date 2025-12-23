@@ -10,6 +10,7 @@
     "sync-images": "bash sync-blog-images.sh"
   },
   "dependencies": {
+    "@giscus/react": "^3.1.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.554.0",
     "next": "15.0.3",

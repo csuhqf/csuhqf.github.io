@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllPostSlugs, getPostData } from "@/lib/posts";
+import Comments from "@/components/Comments";
 import styles from "./page.module.css";
 
 export async function generateStaticParams() {
@@ -32,6 +33,8 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 className={styles.content}
                 dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }}
             />
+
+            <Comments />
 
             <Link href="/blog" className={styles.backLink}>
                 ← Back to Blog
